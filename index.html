@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Scott Extra Brain</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.2/styles/github.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.9.0/github-markdown-light.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/18.1.1/lib/marked.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.4.17/purify.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.2/highlight.min.js"></script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <button class="menu-button" type="button" aria-label="切換目錄" aria-expanded="false">☰</button>
+    <a class="brand" href="#/">Scott Extra Brain</a>
+    <div class="search">
+      <input id="search-input" type="search" placeholder="搜尋標題、摘要、關鍵字（/ 或 Ctrl+K）" autocomplete="off" aria-controls="search-results">
+      <ul id="search-results" class="search-results" role="listbox" hidden></ul>
+    </div>
+  </header>
+  <div class="layout">
+    <nav id="sidebar" class="sidebar" aria-label="筆記目錄"></nav>
+    <div class="sidebar-resizer" role="separator" aria-orientation="vertical" aria-label="調整目錄寬度"></div>
+    <main id="content" class="content"><p class="status">載入中…</p></main>
+    <aside id="toc" class="toc" aria-label="本頁目錄"></aside>
+  </div>
+</body>
+</html>
